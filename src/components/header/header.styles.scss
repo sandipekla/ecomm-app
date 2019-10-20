@@ -1,0 +1,43 @@
+$logo: "logo-url";
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2px;
+  border-bottom: black solid 1px;
+
+  .logo {
+    width: 25%;
+
+    .logoimage {
+      height: 80px;
+      background-image: url($logo);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .pages {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    .page {
+      margin: 5px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  .signin {
+    width: 25%;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
