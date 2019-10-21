@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./header.styles.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="page">CONTACT</div>
       </div>
       <div className="signin">
-        <div>LOG IN/REGISTER</div>
+        <Link to="/signin">LOG IN/REGISTER</Link>
       </div>
     </div>
   );
